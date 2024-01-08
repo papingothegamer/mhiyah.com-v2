@@ -1,0 +1,60 @@
+/* styles/Navbar.module.css */
+.navbar {
+  background-color: #24292e;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.navLogo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.resumeLink {
+  margin-right: 20px; 
+}
+
+.resumeLink a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease; 
+}
+
+.resumeLink a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; 
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white; 
+  transform-origin: 0 0;
+  transform: scaleX(0); 
+  transition: transform 0.3s ease; 
+}
+
+.resumeLink a:hover {
+  color: #f8f8f8; 
+}
+
+.resumeLink a:hover::after {
+  transform: scaleX(1); 
+}
+
+@media (max-width: 768px) {
+  .resumeLink {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 4px; 
+  }
+}

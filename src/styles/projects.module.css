@@ -1,0 +1,78 @@
+/* styles/projects.module.css */
+.projectsSection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap; /* Ensure flexibility in wrapping items */
+  justify-content: center; /* Center projects horizontally */
+}
+
+.projectItem {
+  width: 100%; /* Make the project card fill the available width */
+  max-width: 400px; /* Set a maximum width for the project card */
+  margin: 0 10px 20px 10px; /* Add margin around project cards */
+}
+
+.projectCard {
+  position: relative;
+  border: 2px solid #0070f3; /* Add a bold outline */
+  cursor: pointer;
+}
+
+.projectImage {
+  width: 100%; /* Make the image fill the card */
+  height: auto;
+  object-fit: cover;
+}
+
+.projectDetails {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.projectCard:hover .projectDetails {
+  opacity: 1;
+}
+
+.projectName {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.projectLink {
+  color: #0070f3;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.projectLink::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #0070f3;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition: transform 0.3s ease;
+}
+
+.projectLink:hover {
+  color: #fff;
+}
+
+.projectLink:hover::before {
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+}

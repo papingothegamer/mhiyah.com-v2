@@ -1,0 +1,44 @@
+/* styles/header.module.css */
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .headerText {
+    max-width: 60%; 
+  }
+  
+  .headerText h1 {
+    font-size: 36px; 
+  }
+  
+  .headerText p {
+    font-size: 16px; 
+    color: #666; 
+  }
+  
+  .headerImage {
+    max-width: 40%; 
+    margin-top: 20px; 
+  }
+  
+  /* Responsive styles for mobile view */
+  @media (max-width: 768px) {
+    .headerContainer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .headerText, .headerImage {
+      max-width: 100%; 
+    }
+  
+    .headerText p {
+      margin-top: 10px; 
+    }
+  }
+  

@@ -1,0 +1,29 @@
+/* styles/workExperience.module.css */
+
+.workExperienceContainer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timelineItem {
+    position: relative;
+    padding: 10px;
+    border-left: 2px solid #0070f3;
+    margin-bottom: 20px;
+  }
+  
+  .timelineItem h3 {
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .timelineItem p {
+    color: #666;
+    font-size: 14px;
+  }
+  

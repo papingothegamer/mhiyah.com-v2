@@ -1,0 +1,47 @@
+/* styles/Footer.module.css */
+
+.footer {
+  background-color: #d14900;
+  color: black;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footerSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.socialIcons, .contactList {
+  list-style: none;
+  padding: 0;
+}
+
+.socialIcons li, .contactList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.socialIcons a, .contactList a {
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover, .contactList a:hover {
+  color: #0070f3; 
+}
+
+.copyRight {
+  margin-top: 1rem;
+}
